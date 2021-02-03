@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Curriculum Vitae project using Next.js and Prismic.io as a headless CMS
