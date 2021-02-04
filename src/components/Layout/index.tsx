@@ -48,8 +48,8 @@ const Layout: React.FC<IProps> = ({ children, instagram, facebook, linkedin}) =>
               </div>
               <div className="logoMenu">
                 <ul>
-                  <li><Link href="/clients">JOBS</Link></li>
-                  <li><Link href="/jobs">SCHOOLING</Link></li>
+                  <li><Link href="/jobs">JOBS</Link></li>
+                  <li><Link href="/schooling">SCHOOLING</Link></li>
                   <li><Link href="/">COURSES</Link></li>
                   <li><Link href="/contact">KNOWLEDGE</Link></li>
                   <li><Link href="/contact">INTERESTS</Link></li>
@@ -66,8 +66,8 @@ const Layout: React.FC<IProps> = ({ children, instagram, facebook, linkedin}) =>
           { menu && (
             <ul>
               <li><Link href="/">HOME</Link></li>
-              <li><Link href="/clients">JOBS</Link></li>
-              <li><Link href="/jobs">SCHOOLING</Link></li>
+              <li><Link href="/jobs">JOBS</Link></li>
+              <li><Link href="/schooling">SCHOOLING</Link></li>
               <li><Link href="/">COURSES</Link></li>
               <li><Link href="/contact">KNOWLEDGE</Link></li>
               <li><Link href="/contact">INTERESTS</Link></li>
