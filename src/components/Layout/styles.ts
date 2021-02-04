@@ -6,8 +6,6 @@ export const Container = styled.div`
 
   width: 100%;
   height: 100%;
-
-  
 `;
 
 export const Wrapper = styled.div`
@@ -29,25 +27,30 @@ export const Wrapper = styled.div`
 
     width: 100%;
 
-    
-
     div.section {
       display: inline-block;
-      flex-direction: column;
-      max-width: var(--max-width);
+      width: 100%;
 
-      
-
-      /* margin: 20px 0; */
-
-      > h1 {
+      div.header {
         display: inline-block;
-
-        font-family: 'Ubuntu Condensed';
-        color: var(--color-white);
-        margin: 20px 0;
+        width: 100%;
         text-align: center;
-        min-width: var(--max-width);
+
+        > h1 {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content:center;
+
+            max-width: 50%;
+            display: flex;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-family: 'Ubuntu Condensed';
+            color: var(--color-white);
+            margin: 0 auto;
+            padding: 10px;
+        }
       }
 
       div.image {
@@ -58,29 +61,11 @@ export const Wrapper = styled.div`
         width: 100%;
         padding: 20px;
         opacity: 0.5;
-
+        
         > img {
           border-radius: 50%;
           width: 40%;
-
         }
-      }
-
-      @media(max-width: 880px) {
-        width: 100%;
-
-        > h1 {
-          min-width: 100%;
-        }
-
-        div.image {
-
-        > img {
-          border-radius: 50%;
-          width: 60%;
-
-        }
-      }
       }
 
       b {
@@ -88,13 +73,45 @@ export const Wrapper = styled.div`
         margin-bottom: 20px;
       }
 
-      p {
+    p {
+      color: var(--color-white);
+      margin-bottom: 20px;
+    }
+  }
+
+  @media(max-width: 880px) {
+    div.section {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+
+      div.header {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content:center;
+
+      > h1 {
+        display: flex;
+        flex: 1;
+        border: 1px solid var(--color-white);;
+        margin: 0;
+        border-radius: 5px;
+        font-family: 'Ubuntu Condensed';
+        font-size: 24px;
         color: var(--color-white);
-        margin-bottom: 20px;
+      }
+    }
+
+    div.image {
+      > img {
+        border-radius: 50%;
+        width: 70%;
       }
     }
   }
-`;
+  }
+}`;
 
 export const Header = styled.div`
   display: inline-block;

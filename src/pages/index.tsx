@@ -24,7 +24,9 @@ export default function Home({ main }: IMain ) {
         <div className="image">
           <img src={main.data.photo.url} />
         </div>
-        <h1>{PrismicDOM.RichText.asText(main.data.title)} - CV</h1>
+        <div className="header">
+          <h1>{PrismicDOM.RichText.asText(main.data.title)} - CV</h1>
+        </div>
       </div>
     </Layout>
   )
@@ -33,8 +35,6 @@ export default function Home({ main }: IMain ) {
 export const getStaticProps: GetStaticProps = async () => {
 
   const mainInfo = await client().getSingle('main', null);
-
-  console.log(mainInfo)
 
   return {
     props: {
