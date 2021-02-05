@@ -39,7 +39,8 @@ export const Job = styled.div`
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding-left: 10px;
-    height: 50px;
+    padding-right: 10px;
+    /* height: 50px; */
   }
 
   h3 {
@@ -47,8 +48,9 @@ export const Job = styled.div`
     align-items: center;
     font-family: 'Ubuntu Condensed';
     padding-left: 10px;
+    padding-right: 10px;
     background-color: var(--color-primary-light-1);
-    height: 50px;
+    /* height: 50px; */
   }
 
   span {
