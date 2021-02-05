@@ -148,6 +148,7 @@ export const Header = styled.div`
   .menu {
     display: inline-block;
     vertical-align: middle;
+    /* background-color: red; */
 
     width: 100%;
     min-height: 100%;
@@ -174,7 +175,7 @@ export const Header = styled.div`
         display: inline-block;
         vertical-align: middle;
         text-align: left;
-        width: 50%;
+        width: 40%;
         /* height: 100%; */
 
         > a {
@@ -192,7 +193,7 @@ export const Header = styled.div`
 
       div.logoMenu {
         display: inline-block;
-        width: 50%;
+        width: 60%;
         /* height: 140px; */
         visibility: visible;
 

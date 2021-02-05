@@ -9,7 +9,7 @@ import Layout from '@/components/Layout';
 
 import { client } from '@/lib/prismic';
 
-import { formatDate } from '@/lib/format';
+import Box from '@/components/Box';
 
 import { Container, School } from '@/styles/pages/schooling/styles';
 
@@ -29,18 +29,20 @@ export default function Schooling({ schooling, main }: ISchooling) {
       </Head>
       <div className="section">
         <Container>
-          <h1>Schooling</h1>
+          <h1>Escolaridade</h1>
           <ul>
             { schooling.map((school) => (
               <div key={school.uid}>
-                <li>
-                  <School>
-                    <h2>{ReactHtmlParser(PrismicDOM.RichText.asText(school.data.title))}</h2>
-                    <h3>{ReactHtmlParser(PrismicDOM.RichText.asText(school.data.institution))}</h3>
-                    <span>{ReactHtmlParser(PrismicDOM.RichText.asHtml(school.data.year))}</span>
-                  </School>
-                </li>
-                <hr />
+                <Box width={100}>
+                  <li>
+                    <School>
+                      <h2>{ReactHtmlParser(PrismicDOM.RichText.asText(school.data.title))}</h2>
+                      <h3>{ReactHtmlParser(PrismicDOM.RichText.asText(school.data.institution))}</h3>
+                      <span>{ReactHtmlParser(PrismicDOM.RichText.asText(school.data.year))}</span>
+                    </School>
+                  </li>
+                </Box>
+                <br />
               </div>              
             ))}
           </ul>

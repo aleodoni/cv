@@ -48,12 +48,12 @@ const Layout: React.FC<IProps> = ({ children, instagram, facebook, linkedin}) =>
               </div>
               <div className="logoMenu">
                 <ul>
-                  <li><Link href="/jobs">JOBS</Link></li>
-                  <li><Link href="/schooling">SCHOOLING</Link></li>
-                  <li><Link href="/">COURSES</Link></li>
-                  <li><Link href="/contact">KNOWLEDGE</Link></li>
-                  <li><Link href="/contact">INTERESTS</Link></li>
-                  <li><Link href="/contact">PERSONAL</Link></li>
+                  <li><Link href="/jobs">EMPREGOS</Link></li>
+                  <li><Link href="/schooling">ESCOLARIDADE</Link></li>
+                  <li><Link href="/">CURSOS</Link></li>
+                  <li><Link href="/contact">CONHECIMENTO</Link></li>
+                  <li><Link href="/contact">INTERESSES</Link></li>
+                  <li><Link href="/contact">PESSOAL</Link></li>
                 </ul>
               </div>
             </div>

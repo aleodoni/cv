@@ -31,7 +31,7 @@ export default function Jobs({ jobs, main }: IJobs) {
       </Head>
       <div className="section">
         <Container>
-          <h1>Jobs</h1>
+          <h1>Últimos empregos</h1>
           <ul>
             { jobs.map((job) => (
               <div key={job.uid}>
