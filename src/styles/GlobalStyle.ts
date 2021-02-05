@@ -1,4 +1,5 @@
 import {createGlobalStyle} from 'styled-components';
+import { darken, lighten } from 'polished';
 
 export default createGlobalStyle`
 
@@ -45,9 +46,11 @@ h1 {
 
 :root {
   --color-primary: #240046;
+  --color-primary-light-1: ${lighten(0.1, '#240046')};
   --color-black: #000;
   --color-white: #fff;
   --color-gray: #f0f3f5;
+  --color-gray-dark-1: ${darken(0.6, '#f0f3f5')};
   --color-yellow: #fff461;
   --color-shadow: #0d0d0d;
   --max-width: 960px;

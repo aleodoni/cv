@@ -14,8 +14,6 @@ export const Wrapper = styled.div`
   min-height: 100vh;
   width: 100%;
 
-  
-
   div.main {
     display: inline-block;
     text-align: justify;
@@ -32,9 +30,14 @@ export const Wrapper = styled.div`
       width: 100%;
 
       div.header {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         text-align: center;
+        background-color: var(--color-gray);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 10px;
 
         > h1 {
             display: flex;
@@ -42,14 +45,16 @@ export const Wrapper = styled.div`
             align-items: center;
             justify-content:center;
 
-            max-width: 50%;
-            display: flex;
-            border: 1px solid white;
-            border-radius: 5px;
+            width: 100%;
             font-family: 'Ubuntu Condensed';
-            color: var(--color-white);
+            color: var(--color-primary);
             margin: 0 auto;
-            padding: 10px;
+        }
+
+        > span {
+          font-family: 'Ubuntu Condensed';
+          color: var(--color-primary);
+          line-height: 30px;
         }
       }
 
@@ -59,12 +64,12 @@ export const Wrapper = styled.div`
         justify-content: center;
 
         width: 100%;
-        padding: 20px;
+        padding: 0;
         opacity: 0.5;
         
         > img {
-          border-radius: 50%;
-          width: 40%;
+          border-radius: 10px;
+          width: 100%;
         }
       }
 
@@ -91,22 +96,19 @@ export const Wrapper = styled.div`
         align-items: center;
         justify-content:center;
 
+        background-color: var(--color-gray);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 10px;
+
       > h1 {
         display: flex;
         flex: 1;
-        border: 1px solid var(--color-white);;
-        margin: 0;
-        border-radius: 5px;
+        width: 100%;
         font-family: 'Ubuntu Condensed';
+        color: var(--color-primary);
+        margin: 0 auto;
         font-size: 24px;
-        color: var(--color-white);
-      }
-    }
-
-    div.image {
-      > img {
-        border-radius: 50%;
-        width: 70%;
       }
     }
   }

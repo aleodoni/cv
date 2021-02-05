@@ -11,6 +11,8 @@ import { client } from '@/lib/prismic';
 
 import { formatDate } from '@/lib/format';
 
+import Box from '@/components/Box';
+
 import { Container, Job } from '@/styles/pages/jobs/styles';
 
 interface IJobs {
@@ -33,6 +35,7 @@ export default function Jobs({ jobs, main }: IJobs) {
           <ul>
             { jobs.map((job) => (
               <div key={job.uid}>
+                <Box width={100}>
                 <li>
                   <Job>
                     <h2>{ReactHtmlParser(PrismicDOM.RichText.asText(job.data.company))}</h2>
@@ -41,7 +44,8 @@ export default function Jobs({ jobs, main }: IJobs) {
                     <span className="description">{ReactHtmlParser(PrismicDOM.RichText.asHtml(job.data.description))}</span>
                   </Job>
                 </li>
-                <hr />
+                </Box>
+                <br/>
               </div>              
             ))}
           </ul>

@@ -5,7 +5,8 @@ import { GetStaticProps } from 'next';
 
 import { client } from '@/lib/prismic';
 
-import Layout from '@/components/Layout/index';
+import Layout from '@/components/Layout';
+import Box from '@/components/Box';
 
 interface IMain {
   main: Document;
@@ -20,14 +21,17 @@ export default function Home({ main }: IMain ) {
       <Head>
         <title>{PrismicDOM.RichText.asText(main.data.title)} | CV</title>
       </Head>
-      <div className="section">
-        <div className="image">
-          <img src={main.data.photo.url} />
-        </div>
-        <div className="header">
-          <h1>{PrismicDOM.RichText.asText(main.data.title)} - CV</h1>
-        </div>
-      </div>
+        <Box width={50}>
+          <div className="section">
+            <div className="image">
+              <img src={main.data.photo.url} />
+            </div>
+            <div className="header">
+              <h1>{PrismicDOM.RichText.asText(main.data.title)}</h1>
+              <span>Curriculum Vitae</span>
+            </div>
+          </div>
+        </Box>
     </Layout>
   )
 }
