@@ -51,7 +51,7 @@ const Layout: React.FC<IProps> = ({ children, instagram, facebook, linkedin}) =>
                   <li><Link href="/jobs">EMPREGOS</Link></li>
                   <li><Link href="/schooling">ESCOLARIDADE</Link></li>
                   <li><Link href="/courses">CURSOS</Link></li>
-                  <li><Link href="/contact">CONHECIMENTO</Link></li>
+                  <li><Link href="/knowledge">CONHECIMENTO</Link></li>
                   <li><Link href="/contact">INTERESSES</Link></li>
                   <li><Link href="/contact">PESSOAL</Link></li>
                 </ul>

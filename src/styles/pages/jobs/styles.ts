@@ -38,8 +38,7 @@ export const Job = styled.div`
     background-color: var(--color-gray);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px 10px;
     /* height: 50px; */
   }
 

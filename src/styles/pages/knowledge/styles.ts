@@ -24,7 +24,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Course = styled.div`
+export const Know = styled.div`
   display: flex;
   flex-direction: column;
 
@@ -43,26 +43,24 @@ export const Course = styled.div`
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px 10px;
-    /* height: 50px; */
-  }
-
-  span {
-    font-family: 'Ubuntu Condensed';
-    color: var(--color-primary);
-    background-color: var(--color-gray);
-    
-    font-size: 18px;
-    padding-left: 12px;
   }
 
   span.description {
     font-family: 'Ubuntu Condensed';
-    padding-top: 12px;
     padding-left: 12px;
     padding-right: 10px;
-    background-color: var(--color-primary-light-1);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    opacity: 0.5;
+    line-height: 46px;
   }
+`;
+
+export const KnowWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  width: 100%;
+  background-color: var(--color-primary-light-1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 0.5;
 `;
