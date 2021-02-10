@@ -77,8 +77,6 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   });
 
-  console.log(areas);
-
   const results = Promise.all(arrayAreas.map(async (area) => {
     const knowledge = await client().query([
       Prismic.Predicates.at('document.type', 'knowledge'),

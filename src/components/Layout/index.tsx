@@ -52,8 +52,8 @@ const Layout: React.FC<IProps> = ({ children, instagram, facebook, linkedin}) =>
                   <li><Link href="/schooling">ESCOLARIDADE</Link></li>
                   <li><Link href="/courses">CURSOS</Link></li>
                   <li><Link href="/knowledge">CONHECIMENTO</Link></li>
-                  <li><Link href="/contact">INTERESSES</Link></li>
-                  <li><Link href="/contact">PESSOAL</Link></li>
+                  <li><Link href="/interests">INTERESSES</Link></li>
+                  <li><Link href="/personal">PESSOAL</Link></li>
                 </ul>
               </div>
             </div>
@@ -71,7 +71,7 @@ const Layout: React.FC<IProps> = ({ children, instagram, facebook, linkedin}) =>
               <li><Link href="/">COURSES</Link></li>
               <li><Link href="/contact">KNOWLEDGE</Link></li>
               <li><Link href="/contact">INTERESTS</Link></li>
-              <li><Link href="/contact">PERSONAL</Link></li>
+              <li><Link href="/personal">PERSONAL</Link></li>
             </ul>
           )}
           
