@@ -67,6 +67,7 @@ export const getStaticProps: GetStaticProps = async () => {
     Prismic.Predicates.at('document.type', 'area')
   ], {
     pageSize: 100, 
+    orderings: '[my.area.id]'
   });
 
   const arrayAreas = areas.results.map((area) => {
@@ -75,6 +76,8 @@ export const getStaticProps: GetStaticProps = async () => {
       name: area.data.name[0].text,
     }
   });
+
+  console.log(areas);
 
   const results = Promise.all(arrayAreas.map(async (area) => {
     const knowledge = await client().query([
