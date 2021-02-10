@@ -66,12 +66,12 @@ const Layout: React.FC<IProps> = ({ children, instagram, facebook, linkedin}) =>
           { menu && (
             <ul>
               <li><Link href="/">HOME</Link></li>
-              <li><Link href="/jobs">JOBS</Link></li>
-              <li><Link href="/schooling">SCHOOLING</Link></li>
-              <li><Link href="/">COURSES</Link></li>
-              <li><Link href="/contact">KNOWLEDGE</Link></li>
-              <li><Link href="/contact">INTERESTS</Link></li>
-              <li><Link href="/personal">PERSONAL</Link></li>
+              <li><Link href="/jobs">EMPREGOS</Link></li>
+              <li><Link href="/schooling">ESCOLARIDADE</Link></li>
+              <li><Link href="/courses">CURSOS</Link></li>
+              <li><Link href="/knowledge">CONHECIMENTO</Link></li>
+              <li><Link href="/interests">INTERESSES</Link></li>
+              <li><Link href="/personal">PESSOAL</Link></li>
             </ul>
           )}
           
